@@ -1,0 +1,8 @@
+--- 
+host: all 
+become: yes
+tasks: 
+- name: Ansible apt install nginx
+  apt:
+   name: nginx
+   state: present
